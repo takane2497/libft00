@@ -6,7 +6,7 @@
 /*   By: takonaga <takonaga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 22:58:52 by takonaga          #+#    #+#             */
-/*   Updated: 2022/10/10 03:25:27 by takonaga         ###   ########.fr       */
+/*   Updated: 2022/10/10 06:38:39 by takonaga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	i = 0 ;
 	if (dstsize == 0)
 		return (src_len);
-	while (src[i] && i < dstsize - 1)
+	while (src[i] != '\0' && i < dstsize - 1)
 	{
 		dst[i] = src[i];
 		i++;
